@@ -18,13 +18,13 @@ export default function TopBar(){
     return(
         <div className="top-bar">
             <div className="navbar bg-accent lg:flex-col">
-            <a className="btn btn-ghost text-xl" onClick={()=>navigate("/books")}>DASHBOARD </a>
-            <a className="btn btn-ghost text-l" onClick={()=>handleBooksOnClick()}>BOOKS </a>
-            <a className="btn btn-ghost text-l" onClick={()=>handleAuthorsOnClick()}>AUTHORS </a>
+            <a className="btn btn-ghost text-xl" onClick={()=>navigate("/books")}>DASHBOARD        | </a>
+            <a className="btn btn-ghost text-l" onClick={()=>handleBooksOnClick()}>BOOKS        | </a>
+            <a className="btn btn-ghost text-l" onClick={()=>handleAuthorsOnClick()}>AUTHORS        | </a>
             {/* if the topBar value is books add book button will be displayed and if its not add author button will be displayed */}
             {topBar==="books"?
-            (<a className="btn btn-ghost text-l" onClick={()=>navigate("/addBook")}>ADD BOOK </a>):
-            (<a className="btn btn-ghost text-l"  onClick={()=>navigate("/addAuthor")}>ADD AUTHOR </a>)}
+            (<a className="btn btn-ghost text-l" onClick={()=>navigate("/addBook")}>ADD BOOK         |</a>):
+            (<a className="btn btn-ghost text-l"  onClick={()=>navigate("/addAuthor")}>ADD AUTHOR        | </a>)}
             </div>
         </div>
     )
